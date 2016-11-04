@@ -356,10 +356,6 @@ void TestBlock::verify(TestBlockChain const& _bc) const
 	}
 	catch (...)
 	{
-		BOOST_ERROR(TestOutputHelper::testName() + toString(m_blockHeader.number()) + " BlockHeader Verification failed: " <<  boost::current_exception_diagnostic_information());
-	}
-	catch (...)
-	{
 		BOOST_ERROR(TestOutputHelper::testName() + "BlockHeader Verification failed: " <<  boost::current_exception_diagnostic_information());
 	}
 }
